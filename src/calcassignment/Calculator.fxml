@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.000199999995" prefWidth="554.0" styleClass=", theme" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="calcassignment.CalculatorController">
+  <children>
+    <FlowPane minHeight="454.00019999999495" prefHeight="454.00019999999495" prefWidth="539.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="168.0">
+      <children>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <Button fx:id="buttonC" cancelButton="false" contentDisplay="LEFT" defaultButton="false" graphicTextGap="4.0" mnemonicParsing="false" onAction="#handleButtonCAction" prefHeight="69.0" prefWidth="104.0" styleClass="cancel-button" text="C" textAlignment="CENTER" textFill="BLACK">
+              <font>
+                <Font name="Arial Rounded MT Bold" size="40.0" fx:id="x1" />
+              </font>
+              <stylesheets>
+                <URL value="@Calculator.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button id="buttonLeft" fx:id="buttonLeftBracket" font="$x1" mnemonicParsing="false" onAction="#handleButtonLeftBracketAction" prefHeight="69.0" prefWidth="104.0" styleClass="operator-button" text="(">
+                  <stylesheets>
+                    <URL value="@Calculator.css" />
+                  </stylesheets>
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.99990000000253" prefWidth="132.9998779296875">
+              <children>
+                <Button id="buttonRight" fx:id="buttonRightBracket" font="$x1" mnemonicParsing="false" onAction="#handleButtonRightBracketAction" prefHeight="69.0" prefWidth="104.0" styleClass="operator-button" text=")" textFill="BLACK">
+                  <stylesheets>
+                    <URL value="@Calculator.css" />
+                  </stylesheets>
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button fx:id="buttonDiv" font="$x1" mnemonicParsing="false" onAction="#handleButtonDiv" prefHeight="69.0" prefWidth="104.0" styleClass="operator-button" text="/" textAlignment="LEFT">
+                  <stylesheets>
+                    <URL value="@Calculator.css" />
+                  </stylesheets>
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <Button fx:id="button9" font="$x1" mnemonicParsing="false" onAction="#handleButton9" prefHeight="69.0" prefWidth="104.0" text="9">
+              <HBox.margin>
+                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button fx:id="button8" font="$x1" mnemonicParsing="false" onAction="#handleButton8" prefHeight="69.0" prefWidth="104.0" text="8">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.99990000000253" prefWidth="132.9998779296875">
+              <children>
+                <Button fx:id="button7" font="$x1" mnemonicParsing="false" onAction="#handleButton7" prefHeight="69.0" prefWidth="104.0" text="7">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button fx:id="buttonMult" font="$x1" mnemonicParsing="false" onAction="#handleButtonMult" prefHeight="69.0" prefWidth="104.0" styleClass="operator-button" text="X">
+                  <stylesheets>
+                    <URL value="@Calculator.css" />
+                  </stylesheets>
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0" visible="true">
+          <children>
+            <Button fx:id="button6" font="$x1" mnemonicParsing="false" onAction="#handleButton6" prefHeight="69.0" prefWidth="104.0" text="6">
+              <HBox.margin>
+                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button fx:id="button5" font="$x1" mnemonicParsing="false" onAction="#handleButton5" prefHeight="69.0" prefWidth="104.0" text="5">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.99990000000253" prefWidth="132.9998779296875">
+              <children>
+                <Button fx:id="button4" font="$x1" mnemonicParsing="false" onAction="#handleButton4" prefHeight="69.0" prefWidth="104.0" text="4">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button fx:id="buttonAdd" font="$x1" mnemonicParsing="false" onAction="#handleButtonAdd" prefHeight="69.0" prefWidth="104.0" styleClass="operator-button" text="+">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <Button fx:id="button3" font="$x1" mnemonicParsing="false" onAction="#handleButton3" prefHeight="69.0" prefWidth="104.0" text="3">
+              <HBox.margin>
+                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+          <padding>
+            <Insets fx:id="x2" />
+          </padding>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button fx:id="button2" font="$x1" mnemonicParsing="false" onAction="#handleButton2" prefHeight="69.0" prefWidth="104.0" text="2">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.99990000000253" prefWidth="132.9998779296875">
+              <children>
+                <Button fx:id="button1" font="$x1" mnemonicParsing="false" onAction="#handleButton1" prefHeight="69.0" prefWidth="104.0" text="1">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button fx:id="buttonSub" font="$x1" mnemonicParsing="false" onAction="#handleButtonSub" prefHeight="69.0" prefWidth="104.0" styleClass="operator-button" text="-">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <Button fx:id="button0" font="$x1" mnemonicParsing="false" onAction="#handleButton0" prefHeight="69.0" prefWidth="104.0" text="0">
+              <HBox.margin>
+                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button id="delete" fx:id="buttonDelete" mnemonicParsing="false" onAction="#handleButtonDelete" prefHeight="69.0" prefWidth="104.0" text="DEL">
+                  <font>
+                    <Font size="20.0" />
+                  </font>
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.99990000000253" prefWidth="132.9998779296875">
+              <children>
+                <Button fx:id="buttonPoint" contentDisplay="CENTER" font="$x1" mnemonicParsing="false" onAction="#handleButtonPoint" prefHeight="69.0" prefWidth="104.0" text="." textAlignment="JUSTIFY">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="91.8" prefWidth="133.0">
+          <children>
+            <HBox prefHeight="91.8" prefWidth="133.0">
+              <children>
+                <Button fx:id="buttonEquals" font="$x1" mnemonicParsing="false" onAction="#handleButtonEquals" prefHeight="69.0" prefWidth="104.0" styleClass="equality-button" text="=">
+                  <HBox.margin>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+      </children>
+    </FlowPane>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9ffcc" height="105.0" layoutX="25.0" layoutY="37.0" stroke="BLACK" strokeLineCap="SQUARE" strokeLineJoin="ROUND" strokeType="INSIDE" width="503.0" />
+    <AnchorPane id="AnchorPane" layoutX="25.0" layoutY="37.0">
+      <children>
+        <Pane layoutX="0.0" layoutY="0.0" maxWidth="1.7976931348623157E308" prefHeight="105.0" prefWidth="223.0">
+          <stylesheets>
+            <URL value="@Calculator.css" />
+          </stylesheets>
+        </Pane>
+      </children>
+    </AnchorPane>
+    <Text fx:id="display" boundsType="LOGICAL" cache="false" fontSmoothingType="GRAY" layoutY="90.0" scaleX="6.231256967897274" scaleY="8.95634885971232" smooth="false" strokeLineCap="BUTT" strokeType="INSIDE" strokeWidth="0.0" text="0" textAlignment="LEFT" textOrigin="BOTTOM" wrappingWidth="77.0" x="100.0" y="0.0" AnchorPane.rightAnchor="242.0">
+      <font>
+        <Font size="8.0" />
+      </font>
+      <rotationAxis>
+        <Point3D z="1.0" />
+      </rotationAxis>
+    </Text>
+  </children>
+  <stylesheets>
+    <URL value="@Calculator.css" />
+  </stylesheets>
+</AnchorPane>
